@@ -1,20 +1,20 @@
 {
     "gammaAccess": {
-       "url": "http://192.168.1.15:3000",
-        "userName": "upgradedocker1950@mygamma.io",
-        "password": "gamma123"
+        "url": "",
+        "userName": "",
+        "password": ""
     },
     "repositories": [
         {
-            "dataDir": "C:\\Users\\Abhijit\\Downloads\\snappy-master\\datadir",
+            "dataDir": "",
             "repository": {
                 "uid": "e84c41fa2366be13b2231db7e345b2a5",
-                "projectName": "snappy",
+                "projectName": "snappy-git",
                 "languages": [
                     "CPP"
                 ],
                 "sources": {
-                    "baseDir": "C:\\Users\\Abhijit\\Downloads\\snappy-master",
+                    "baseDir": "",
                     "exclusions": [
                         "thirdparty",
                         "third-party",
