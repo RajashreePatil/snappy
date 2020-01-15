@@ -1,0 +1,140 @@
+{
+    "gammaAccess": {
+       "url": "http://192.168.1.15:3000",
+        "userName": "upgradedocker1950@mygamma.io",
+        "password": "gamma123"
+    },
+    "repositories": [
+        {
+            "dataDir": "C:\\Users\\Abhijit\\Downloads\\snappy-master\\datadir",
+            "repository": {
+                "uid": "e84c41fa2366be13b2231db7e345b2a5",
+                "projectName": "snappy",
+                "languages": [
+                    "CPP"
+                ],
+                "sources": {
+                    "baseDir": "C:\\Users\\Abhijit\\Downloads\\snappy-master",
+                    "exclusions": [
+                        "thirdparty",
+                        "third-party",
+                        "3rd-party",
+                        "external",
+                        "generated",
+                        "mock",
+                        "test",
+                        "build"
+                    ]
+                }
+            },
+            "settings": {
+                "additionalOptions": [],
+                "includePaths": []
+            },
+            "modules": {
+                "codeissues": [
+                    {
+                        "name": "cppcheck",
+                        "enabled": true,
+                        "config": {
+                            "rules": [],
+                            "options": [
+                                {
+                                    "name": "CodingStyle",
+                                    "type": "multiselect",
+                                    "value": [
+                                        "style",
+                                        "performance",
+                                        "portability"
+                                    ],
+                                    "choices": [
+                                        "style",
+                                        "performance",
+                                        "portability",
+                                        "warning",
+                                        "information",
+                                        "unusedFunction",
+                                        "missingInclude"
+                                    ],
+                                    "required": false
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "gamma_cxx",
+                        "enabled": true,
+                        "config": {
+                            "rules": [],
+                            "options": []
+                        }
+                    },
+                    {
+                        "name": "gamma_generic",
+                        "enabled": false,
+                        "config": {
+                            "rules": [],
+                            "options": [
+                                {
+                                    "name": "reportDir",
+                                    "type": "upload",
+                                    "value": "",
+                                    "required": true
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "relevance": [
+                    {
+                        "name": "relevance",
+                        "enabled": true,
+                        "config": {
+                            "rules": [],
+                            "options": [
+                                {
+                                    "name": "mode",
+                                    "value": "git"
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "coverage": [
+                    {
+                        "name": "gcov",
+                        "enabled": true,
+                        "config": {
+                            "rules": [],
+                            "options": [
+                                {
+                                    "name": "reportDir",
+                                    "type": "upload",
+                                    "value": "",
+                                    "required": true
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "unittest": [
+                    {
+                        "name": "gtest",
+                        "enabled": true,
+                        "config": {
+                            "rules": [],
+                            "options": [
+                                {
+                                    "name": "reportDir",
+                                    "type": "upload",
+                                    "value": "",
+                                    "required": true
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        }
+    ]
+}
