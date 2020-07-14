@@ -8,8 +8,8 @@
         {
             "dataDir": "",
             "repository": {
-                "uid": "e84c41fa2366be13b2231db7e345b2a5",
-                "projectName": "snappy-git",
+                "uid": "3f443b8a9b26e92275c5496a83bf6d7e",
+                "projectName": "snappy-cpp",
                 "languages": [
                     "CPP"
                 ],
@@ -32,7 +32,62 @@
                 "includePaths": []
             },
             "modules": {
+                "coverage": [
+                    {
+                        "name": "gcov",
+                        "enabled": true,
+                        "config": {
+                            "rules": [],
+                            "options": [
+                                {
+                                    "name": "reportDir",
+                                    "type": "upload",
+                                    "value": "",
+                                    "required": true
+                                }
+                            ]
+                        }
+                    }
+                ],
                 "codeissues": [
+                    {
+                        "name": "gamma_cxx",
+                        "enabled": true,
+                        "config": {
+                            "rules": [],
+                            "options": []
+                        }
+                    },
+                    {
+                        "name": "embold_sec",
+                        "enabled": false,
+                        "config": {
+                            "rules": [],
+                            "options": [
+                                {
+                                    "name": "reportDir",
+                                    "type": "upload",
+                                    "value": "",
+                                    "required": true
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "gamma_generic",
+                        "enabled": false,
+                        "config": {
+                            "rules": [],
+                            "options": [
+                                {
+                                    "name": "reportDir",
+                                    "type": "upload",
+                                    "value": "",
+                                    "required": true
+                                }
+                            ]
+                        }
+                    },
                     {
                         "name": "cppcheck",
                         "enabled": true,
@@ -60,29 +115,6 @@
                                 }
                             ]
                         }
-                    },
-                    {
-                        "name": "gamma_cxx",
-                        "enabled": true,
-                        "config": {
-                            "rules": [],
-                            "options": []
-                        }
-                    },
-                    {
-                        "name": "gamma_generic",
-                        "enabled": false,
-                        "config": {
-                            "rules": [],
-                            "options": [
-                                {
-                                    "name": "reportDir",
-                                    "type": "upload",
-                                    "value": "",
-                                    "required": true
-                                }
-                            ]
-                        }
                     }
                 ],
                 "relevance": [
@@ -95,23 +127,6 @@
                                 {
                                     "name": "mode",
                                     "value": "git"
-                                }
-                            ]
-                        }
-                    }
-                ],
-                "coverage": [
-                    {
-                        "name": "gcov",
-                        "enabled": true,
-                        "config": {
-                            "rules": [],
-                            "options": [
-                                {
-                                    "name": "reportDir",
-                                    "type": "upload",
-                                    "value": "",
-                                    "required": true
                                 }
                             ]
                         }
